@@ -1,0 +1,33 @@
+/* Main Styles for Build a Startup in a Day */
+
+/* Hero gradient matching logo-1 */
+.hero-gradient {
+    background: linear-gradient(135deg, #3D6291 0%, #6B5B95 100%);
+}
+
+/* Text gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #1b5fa3, #f9943b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Card hover effects */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Mobile menu toggle */
+#mobile-menu {
+    display: none;
+}
+
+#mobile-menu.show {
+    display: block;
+}

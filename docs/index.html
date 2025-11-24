@@ -3,33 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buildly.io - Build Your Startup in a Day</title>
-    <meta name="description" content="Learn to build your startup and software product in a day with Buildly.io and Partner Korgi. Access webinars, training, open source tools, and SaaS solutions.">
+    <title>Build a Startup in a Day | Buildly AI Development + Korgi Productivity</title>
+    <meta name="description" content="Launch your startup fast with Buildly's AI-powered development platform and Korgi's unified productivity workspace. 50% budget reduction, 5-6 hours saved weekly. Free trials available.">
+    <meta name="keywords" content="startup development, AI development platform, productivity tools, Buildly, Korgi, rapid product development, sustainable AI, microservices, workspace organization, tab management, startup in a day">
+    <meta name="author" content="Buildly">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://buildastartupinaday.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://buildastartupinaday.com/">
+    <meta property="og:title" content="Build a Startup in a Day | Buildly + Korgi">
+    <meta property="og:description" content="Sustainable AI development + unified productivity workspace. Save 50% on dev budget and 5-6 hours per week. Start free today.">
+    <meta property="og:image" content="https://buildastartupinaday.com/assets/images/logo-1.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Build a Startup in a Day">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://buildastartupinaday.com/">
+    <meta name="twitter:title" content="Build a Startup in a Day | Buildly + Korgi">
+    <meta name="twitter:description" content="Sustainable AI development + unified productivity workspace. Save 50% on dev budget and 5-6 hours per week. Start free today.">
+    <meta name="twitter:image" content="https://buildastartupinaday.com/assets/images/logo-1.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Build a Startup in a Day",
+      "description": "AI-powered development platform and unified productivity workspace for software entrepreneurs",
+      "url": "https://buildastartupinaday.com",
+      "logo": "https://buildastartupinaday.com/assets/images/logo-1.png",
+      "founder": [
+        {
+          "@type": "Organization",
+          "name": "Buildly",
+          "url": "https://www.buildly.io"
+        },
+        {
+          "@type": "Organization",
+          "name": "Korgi",
+          "url": "https://www.korgiboard.com"
+        }
+      ],
+      "sameAs": [
+        "https://www.buildly.io",
+        "https://www.korgiboard.com"
+      ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3D6291',
+                        'secondary': '#6B5B95',
+                        'accent': '#f9943b'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-2">
+    <nav class="bg-gradient-to-r from-blue-500 to-purple-600 shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-4">
-                    <a href="/" class="flex items-center">
-                        <img src="/assets/images/logo-2.png" alt="Buildly + Korgi - Build a Startup in a Day" class="h-56">
-                    </a>
+                    <div class="flex-shrink-0 flex items-center space-x-3">
+                        <a href="/index.html">
+                            <img src="/assets/images/logo-2.png" alt="Buildly + Korgi - Build a Startup in a Day" class="h-56">
+                        </a>
+                    </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="/" class="text-white hover:text-gray-200 font-medium">Home</a>
-                    <a href="/about.html" class="text-white hover:text-gray-200 font-medium">About</a>
-                    <a href="#resources" class="text-white hover:text-gray-200 font-medium">Resources</a>
-                    <a href="/contact.html" class="text-white hover:text-gray-200 font-medium">Contact</a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/index.html" class="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium border-b-2 border-white">Home</a>
+                        <a href="/about.html" class="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/contact.html" class="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="#resources" class="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Resources</a>
+                    </div>
                 </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-white hover:text-gray-200" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-r from-blue-500 to-purple-600 border-t border-blue-400">
+                <a href="/index.html" class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="/about.html" class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="/contact.html" class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#resources" class="text-white hover:text-gray-200 block px-3 py-2 rounded-md text-base font-medium">Resources</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-20" style="background: linear-gradient(135deg, #3D6291 0%, #6B5B95 100%);">
-        <div class="max-w-6xl mx-auto px-4 text-white">
+    <section class="hero-gradient py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="flex justify-center md:justify-start">
                     <img src="/assets/images/logo-1.png" alt="Buildly + Korgi" class="w-full max-w-md">
@@ -217,10 +308,43 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8 mt-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; 2024 Buildly.io × Partner Korgi. Empowering developers to build startups in a day.</p>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4">Build a Startup in a Day</h3>
+                    <p class="text-gray-300 mb-4">Brought to you by Buildly and Korgi</p>
+                    <p class="text-gray-400 text-sm">
+                        Created with <a href="https://buildly.io/forgeweb" class="text-accent hover:underline">ForgeWeb</a> 
+                        by <a href="https://buildly.io" class="text-accent hover:underline">Buildly</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/index.html" class="hover:text-accent">Home</a></li>
+                        <li><a href="/about.html" class="hover:text-accent">About</a></li>
+                        <li><a href="/contact.html" class="hover:text-accent">Contact</a></li>
+                        <li><a href="/articles.html" class="hover:text-accent">Articles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <div class="text-gray-300 space-y-2">
+                        <p>Buildly</p>
+                        <p><a href="mailto:contact@buildly.io" class="hover:text-accent">Get in Touch</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Buildly. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/site-config.js"></script>
+    <script src="/assets/js/site.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
